@@ -35,8 +35,6 @@ const SignUpForm = () => {
 
       console.log("User Creation failed: ", error.message);
     }
-
-
   }
 
   const resetFormFields = () => {
@@ -53,7 +51,7 @@ const SignUpForm = () => {
 
     <div className="sign-up-container">
       <h2>Don't have an account?</h2>
-      <span>Sign Up with Email & Password</span>
+      <span>Sign Up with email and password</span>
       <form onSubmit={handleSubmit}>
 
         <FormInput label="Display Name" type="text" required onChange={handleChange} name="displayName" value={displayName} />
