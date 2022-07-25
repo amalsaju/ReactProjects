@@ -20,8 +20,6 @@ const Navigation = () => {
     await signOutUser();
   }
 
-
-
   return (
     <Fragment>
       <div className='navigation'>
