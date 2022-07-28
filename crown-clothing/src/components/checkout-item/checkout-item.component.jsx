@@ -2,7 +2,7 @@
 import { useContext } from 'react';
 import { CartContext } from '../../contexts/cart.context';
 
-import './checkout-item.styles.scss';
+import {CheckoutItemContainer, ImageContainer, Arrow, Value, RemoveButton, BaseSpan, Quantity } from './checkout-item.styles.jsx';
 
 const CheckoutItem = ({ cartItem }) => {
 
@@ -24,23 +24,23 @@ const CheckoutItem = ({ cartItem }) => {
   }
 
   return (
-    <div className='checkout-item-container'>
-      <div className='image-container'>
+    <CheckoutItemContainer>
+      <ImageContainer>
         <img src={imageUrl} alt={`${name}`} />
-      </div>
-      <span className='name'>{name}</span>
-      <span className='quantity'>
-        <div className='arrow' onClick={removeItem}>
+      </ImageContainer>
+      <BaseSpan>{name}</BaseSpan>
+      <Quantity>
+        <Arrow onClick={removeItem}>
           <span > &#10094; </span>
-        </div>
-        <span className='value'> {quantity}</span>
-        <div className='arrow' onClick={addItem}>
+        </Arrow>
+        <Value> {quantity}</Value>
+        <Arrow onClick={addItem}>
           &#10095;
-        </div>
-      </span>
-      <span className='price'>{totalPrice}</span>
-      <div className='remove-button' onClick={clearItem}>&#10005;</div>
-    </div>
+        </Arrow>
+      </Quantity>
+      <BaseSpan>{totalPrice}</BaseSpan>
+      <RemoveButton onClick={clearItem}>&#10005;</RemoveButton>
+    </CheckoutItemContainer>
   );
 
 }
