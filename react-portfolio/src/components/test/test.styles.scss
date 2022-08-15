@@ -1,0 +1,16 @@
+.svg text {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 600;
+  font-size: 80px;
+}
+
+.dot {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+svg {
+  width: 500px;
+  height: auto;
+  right: 0;
+}

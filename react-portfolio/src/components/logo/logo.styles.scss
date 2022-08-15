@@ -8,7 +8,7 @@
   bottom: 0;
   left: auto;
   margin: auto;
-  opacity: 0;
+  opacity: 1;
 
   svg {
     width: 100%;
@@ -25,7 +25,7 @@
     left: 0;
     margin: auto;
     width: 100%;
-    opacity: 0;
+    opacity: 1;
     transform: rotateZ(30deg);
     z-index: 1;
   }
@@ -35,4 +35,35 @@
 .svg-container {
   stroke: #ffd700;
   stroke-width: 10px;
+}
+
+.cubespinner{
+  animation-name: spincube;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 12s;
+  transform-style: preserve-3d;
+  transform-origin: 100px 100px 0;
+}
+
+@keyframes spincube {
+  from,
+  to {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  16% {
+    transform: rotateY(-90deg);
+  }
+  33% {
+    transform: rotateY(-90deg) rotateZ(90deg);
+  }
+  50%{
+    transform: rotateY(-180deg) rotateZ(90deg);
+  }
+  66%{
+    transform: rotateY(-270deg) rotateZ(90deg);
+  }
+  83%{
+    transform: rotateY(90deg);
+  }
 }
