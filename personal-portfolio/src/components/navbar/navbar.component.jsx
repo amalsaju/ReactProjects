@@ -48,9 +48,9 @@ const NavBar = () => {
               <Nav.Link href="#project"
                 className={activeLink === 'project' ? 'active navbar-link' : 'navbar-link'}
                 onClick={() => onUpdateActiveLink('project')}>Projects</Nav.Link>
-              <Nav.Link href="about"
+              {/* <Nav.Link href="about"
                 className={activeLink === 'about' ? 'active navbar-link' : 'navbar-link'}
-                onClick={() => onUpdateActiveLink('about')}>About Me</Nav.Link>
+                onClick={() => onUpdateActiveLink('about')}>About Me</Nav.Link> */}
             </Nav>
 
           </Navbar.Collapse>

@@ -15,9 +15,9 @@ const Projects = () => {
       link: "https://endearing-lollipop-9efedd.netlify.app/",
     },
     {
-      title: "Tic Tac Toe Game",
-      description: "Interactive tic-tac-toe game with React",
-      link: "",
+      title: "Portfolio Website",
+      description: "My personal portfolio website",
+      link: "/",
     },
     {
       title: "Dawn of Chaos",
