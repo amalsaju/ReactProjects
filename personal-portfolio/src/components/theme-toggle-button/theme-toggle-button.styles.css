@@ -1,0 +1,11 @@
+
+.themeToggle{
+  height: 50px;
+  width: 50px;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  position: relative;
+  font-size: 10px;
+  margin-right: auto;
+  color: var(--text-color);
+}

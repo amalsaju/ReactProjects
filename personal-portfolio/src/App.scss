@@ -23,17 +23,39 @@
   box-sizing: border-box;
 }
 
+@mixin lightmode(){
+  --primary-color: #e0e0e0;
+  --secondary-color: #ff7143;
+  --text-color: #103e42;
+}
+
+@mixin darkmode(){
+  --primary-color: #021212;
+  --secondary-color: #103E42;
+  --text-color: #e0e0e0;
+}
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 75px;
 }
 
 body {
+
+  @include lightmode();
+  &.is_inverted {
+      @include darkmode();
+   }
+  @media (prefers-color-scheme: dark) {
+      @include darkmode();
+      &.is_inverted {
+          @include lightmode();
+      }
+  }
+
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
-  background-color: #121212 !important;
-  color: #fff !important;
   font-family: 'Centra', sans-serif !important;
 }
 

@@ -37,22 +37,22 @@ const Skills = () => {
               <p>These are some of the technologies I am proficient in.</p>
               <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                 <div className="item">
-                  <FontAwesomeIcon icon={faUnity} style={{ color: "#b0b0b0" }} />
+                  <FontAwesomeIcon className='faIcon' icon={faUnity} style={{ color: "#b0b0b0" }} />
                 </div>
                 <div className="item">
-                  <FontAwesomeIcon icon={faReact} style={{ color: "#62dafc" }} />
+                  <FontAwesomeIcon className='faIcon' icon={faReact} style={{ color: "#62dafc" }} />
                 </div>
                 <div className="item">
-                  <FontAwesomeIcon icon={faHtml5} style={{ color: "#f0652a" }} />
+                  <FontAwesomeIcon className='faIcon' icon={faHtml5} style={{ color: "#f0652a" }} />
                 </div>
                 <div className="item">
-                  <FontAwesomeIcon icon={faCss3} style={{ color: "#3c9cd7" }} />
+                  <FontAwesomeIcon className='faIcon' icon={faCss3} style={{ color: "#3c9cd7" }} />
                 </div>
                 <div className="item">
-                  <FontAwesomeIcon icon={faJs} style={{ color: "#E0C71F" }} />
+                  <FontAwesomeIcon className='faIcon' icon={faJs} style={{ color: "#E0C71F" }} />
                 </div>
                 <div className="item">
-                  <FontAwesomeIcon icon={faGitAlt} style={{ color: "#f25029" }} />
+                  <FontAwesomeIcon className='faIcon' icon={faGitAlt} style={{ color: "#f25029" }} />
                 </div>
               </Carousel>
             </div>

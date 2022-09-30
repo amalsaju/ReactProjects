@@ -5,12 +5,12 @@
 .skill {
   padding: 0 0 50px 0;
   position: relative;
-  color: #e0e0e0;
-  background-color: #121212;
+  color: var(--text-color);
+  background-color: var(--primary-color);
 }
 
 .skill-bx {
-  background: rgb(57, 105, 104);
+  background-color: var(--secondary-color);
   border-radius: 64px;
   text-align: center;
   padding: 60px 50px;
@@ -37,6 +37,16 @@
 
 
 .item {
+  display: inline-block;
+  border: 1px solid var(--text-color);
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  background-color: var(--text-color);
+}
+
+.faIcon {
+  padding-top: 20px;
   font-size: 100px;
   display: inline-block;
   text-align: center;

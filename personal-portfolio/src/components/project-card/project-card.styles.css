@@ -9,6 +9,7 @@
   -webkit-user-select: none;
   -ms-user-select: none; 
   user-select: none; 
+  color: var(--text-color);;
 }
 
 .proj-imgbx::before {
@@ -21,7 +22,7 @@
 }
 
 .proj-imgbx:hover {
-  background-color: rgba(44, 39, 42, 0.9);
+  background-color: var(--secondary-color);
   transition: 0.7s ease-in-out;
 }
 

@@ -4,6 +4,7 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 import {
   BrowserRouter as Router
 } from "react-router-dom";
+import ThemeToggleButton from "../theme-toggle-button/theme-toggle-button.component";
 
 import './navbar.styles.css';
 
@@ -11,6 +12,30 @@ const NavBar = () => {
 
   const [activeLink, setActiveLink] = useState('home');
   const [scrolled, setScrolled] = useState(false);
+  const [lightMode, setLightMode] = useState('default')
+
+  const toggleTheme = () => {
+    const localTheme = window.localStorage.getItem('lightMode')
+    const savedMode = localTheme === 'inverted' ? 'inverted' : 'default'
+    if (savedMode === 'default') {
+      window.localStorage.setItem('lightMode', 'inverted')
+      setLightMode('inverted')
+    } else {
+      window.localStorage.setItem('lightMode', 'default')
+      setLightMode('default')
+    }
+  }
+
+  useEffect(() => {
+    const localTheme = window.localStorage.getItem('lightMode')
+    setLightMode(localTheme)
+    if (localTheme === 'inverted') {
+      document.body.classList.add('is_inverted')
+    }
+    else {
+      document.body.classList.remove('is_inverted')
+    }
+  }, [lightMode])
 
   useEffect(() => {
     const onScroll = () => {
@@ -52,9 +77,9 @@ const NavBar = () => {
                 className={activeLink === 'about' ? 'active navbar-link' : 'navbar-link'}
                 onClick={() => onUpdateActiveLink('about')}>About Me</Nav.Link> */}
             </Nav>
-
           </Navbar.Collapse>
         </Container>
+        <ThemeToggleButton themeSwitch={toggleTheme} />
       </Navbar>
     </Router>
   )

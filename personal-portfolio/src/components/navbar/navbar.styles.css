@@ -11,7 +11,7 @@ nav.navbar {
 
 nav.navbar.scrolled {
   padding: 0px 0;
-  background-color: #121212;
+  background-color: var(--secondary-color);
 }
 
 nav.navbar a.navbar-brand {
@@ -20,7 +20,7 @@ nav.navbar a.navbar-brand {
 
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
-  color: #fff !important;
+  color: var(--text-color) !important;
   letter-spacing: 0.8px;
   padding: 0 25px;
   font-size: 18px;
