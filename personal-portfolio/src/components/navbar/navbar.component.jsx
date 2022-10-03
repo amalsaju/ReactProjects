@@ -1,11 +1,9 @@
 import { useState, useEffect } from "react";
-import { Navbar, Nav, Container } from "react-bootstrap";
+import {BrowserRouter as Router} from "react-router-dom";
 
-import {
-  BrowserRouter as Router
-} from "react-router-dom";
 import ThemeToggleButton from "../theme-toggle-button/theme-toggle-button.component";
 
+import { Navbar, Nav, Container } from "react-bootstrap";
 import './navbar.styles.css';
 
 const NavBar = () => {
@@ -73,7 +71,7 @@ const NavBar = () => {
               <Nav.Link href="#project"
                 className={activeLink === 'project' ? 'active navbar-link' : 'navbar-link'}
                 onClick={() => onUpdateActiveLink('project')}>Projects</Nav.Link>
-              {/* <Nav.Link href="about"
+              {/* <Nav.Link href="/about"
                 className={activeLink === 'about' ? 'active navbar-link' : 'navbar-link'}
                 onClick={() => onUpdateActiveLink('about')}>About Me</Nav.Link> */}
             </Nav>

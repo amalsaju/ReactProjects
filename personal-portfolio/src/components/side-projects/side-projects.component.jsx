@@ -1,10 +1,12 @@
-import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import ProjectCard from "../project-card/project-card.component";
-import colorSharp2 from "../../assets/img/color-sharp2.png";
+
+import { Container, Row, Col } from "react-bootstrap";
 import 'animate.css';
-import TrackVisibility from 'react-on-screen';
 
 import './side-projects.styles.css';
+import rocket from "../../assets/img/rocket.png";
+import spaceShuttle from "../../assets/img/space-shuttle.png";
+import universe from "../../assets/img/universe.png";
 
 const Projects = () => {
 
@@ -45,7 +47,7 @@ const Projects = () => {
     <section className="project" id="project">
       <Container>
         <Row>
-          <Col size={12}>
+          <Col md={{ span: 12 }}>
             <div>
               <h2>Projects</h2>
               <Row>
@@ -57,6 +59,16 @@ const Projects = () => {
                   )
                 })}
               </Row>
+            </div>
+          </Col>
+          <Col>
+            <div className="space-shuttle-div" >
+              <img src={spaceShuttle} className="space-shuttle-image" alt="Space shuttle Img" />
+            </div>
+          </Col>
+          <Col>
+            <div className="rocket-div" >
+              <img src={rocket} className="rocket-image" alt="Rocket Img" />
             </div>
           </Col>
         </Row>

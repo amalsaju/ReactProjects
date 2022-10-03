@@ -38,8 +38,7 @@
   width: 96%;
 }
 
-
-.banner img {
+.planet-image{
   animation: updown 3s linear infinite;
 }
 

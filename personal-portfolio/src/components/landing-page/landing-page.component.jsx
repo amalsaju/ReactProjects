@@ -1,5 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
 import planet from "../../assets/img/planet.png";
+import comet from "../../assets/img/comet.png";
 import 'animate.css';
 import ReactTypingEffect from 'react-typing-effect';
 import './landing-page.styles.css';
@@ -29,12 +30,15 @@ const LandingPage = () => {
                   );
                 }}
               />
+
               <p>I love programming and tinkering with new technologies.</p>
+
             </div>
           </Col>
           <Col xs={12} md={6} xl={5}>
+
             <div >
-              <img src={planet} alt="Header Img" />
+              <img src={planet} className="planet-image" alt="Header Img" />
             </div>
           </Col>
         </Row>

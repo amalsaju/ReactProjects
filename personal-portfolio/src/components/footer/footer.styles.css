@@ -31,19 +31,21 @@
   z-index: 1;
   transition: 0.3s ease-in-out;
   color: var(--text-color);
+  text-decoration: none;
 }
 
-/* .social-icon a::before {
-  content: "";
-  width: 42px;
-  height: 42px;
-  position: absolute;
-  background-color: #ffffff;
-  border-radius: 50%;
-  transform: scale(0);
-  transition: 0.3s ease-in-out;
-} */
+ .social-icon a:hover {
+  color: var(--text-color);
+  
+}
 
 .social-icon a:hover::before {
   transform: scale(1);
+}
+
+.yellow-moon-div{
+  position: absolute;
+  left: 50px;
+  width: 100px;
+  bottom: 0;
 }
