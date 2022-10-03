@@ -1,6 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
 import planet from "../../assets/img/planet.png";
-import comet from "../../assets/img/comet.png";
 import 'animate.css';
 import ReactTypingEffect from 'react-typing-effect';
 import './landing-page.styles.css';
